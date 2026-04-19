@@ -161,9 +161,9 @@ function StatusIcon({ success }) {
 
 function InfoRow({ label, value }) {
   return (
-    <div className="flex items-center justify-between border-b border-slate-100 py-3">
+    <div className="grid grid-cols-1 gap-1 border-b border-slate-100 py-3 sm:grid-cols-[minmax(132px,40%)_minmax(0,60%)] sm:items-center">
       <span className="text-sm font-medium text-slate-500">{label}</span>
-      <span className="ml-4 text-right text-sm font-semibold text-slate-800">{value}</span>
+      <span className="min-w-0 break-words text-left text-sm font-semibold text-slate-800 sm:text-right">{value}</span>
     </div>
   );
 }
