@@ -187,8 +187,8 @@ function ResultCard({ order, status, reference, amount, isError, errorMessage })
       <p className="mt-2 text-center text-sm text-slate-600">{message}</p>
 
       <div className="mt-6 rounded-md bg-slate-50 px-4">
-        <InfoRow label="Numero de Orden" value={order || "No disponible"} />
-        <InfoRow label="Aprobacion" value={reference || "No disponible"} />
+        <InfoRow label="Número de Orden" value={order || "No disponible"} />
+        <InfoRow label="Número de Aprobación PG" value={reference || "No disponible"} />
         <InfoRow label="Monto Pagado" value={formatAmount(amount)} />
       </div>
 
